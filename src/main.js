@@ -15,6 +15,12 @@ import router from './router'
 import '@/icons' // icon
 import '@/permission' // permission control
 
+import costools from './utils/costools'
+window.costools = costools
+
+import { isToday } from 'date-fns'
+console.log(isToday(new Date()))
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
